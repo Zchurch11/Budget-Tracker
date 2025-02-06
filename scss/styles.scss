@@ -1,0 +1,74 @@
+.filter-container{
+    width: 67% !important;
+    margin-inline: auto;
+
+    #filterExpenses{
+    width: 68% !important;
+}
+}
+#expenses, #saving {
+    min-height: 215px;
+} 
+li{
+    h4,.expenseName, .goalName {
+       
+        flex: 1;    
+       
+    }
+    
+}  
+.progress{
+    height: 30px !important;
+}
+.chartContainer{
+    width: 100% !important;
+    height: 400px !important;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+    section{
+        padding-inline: 1rem !important;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .filter-container{
+        width: 100% !important;
+        
+        #filterExpenses{
+            width: 100% !important;
+        }
+    }
+    .goal-stats{
+        h5{
+            font-size: 1.1rem !important;
+        }
+    }
+    .input-wrapper{
+        flex-direction: column !important;
+
+        input[type=number]{
+            margin-bottom: 1rem !important;
+        }
+    }
+    #savingsSelect{
+        margin: 0 !important;
+    }
+}
+@media (min-width: 990px) and (max-width: 1230px ){
+    .stats{
+        .card{
+            height: 90%;
+        }
+    }
+    .input-wrapper{
+        display: flex !important;
+        flex-direction: row !important;
+
+        input[type=number]{
+            margin-bottom: 0 !important;
+        }
+    }
+}

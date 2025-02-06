@@ -1,0 +1,87 @@
+// Font 
+$font-family-sans-serif: 'Poppins', sans-serif, 'Lato';
+//Font Size
+$font-sizes: (
+  1: 2.10rem,
+  2: 1.95rem,
+  3: 1.75rem,
+  4: 1.5rem,
+  5: 1.25rem,
+  6: 1rem,
+  7: 1.125rem
+);
+
+// Colors
+$primary: #1d4ed8;
+$secondary: #bfdbfe;
+$dark: #1e3a8a;
+$light: #dbeafe;
+$body-bg: #f1f1f1;
+$body-color: #000;
+
+
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+$headings-margin-bottom: $spacer * 1 !default;
+$line-height-base: 1.7 !default;
+
+// Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+
+// Buttons
+// $button-radius: 50px;
+$button-padding-x: .75rem;
+$button-padding-y: .375rem;
+
+// $btn-border-radius: $button-radius;
+// $btn-border-radius-sm: $button-radius;
+// $btn-border-radius-lg: $button-radius;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+// $navbar-toggler-border-radius: 5px;
+
+// Input
+$input-radius: 0px;
+$input-btn-padding-y: .75rem;
+$input-btn-padding-x: .75rem;
+$input-border-radius: $input-radius;
+$input-border-radius-sm: $input-radius;
+$input-border-radius-lg: $input-radius;
+$input-border-color: #666;
+
+// Media queries for font sizes
+@media (min-width: 1200px) {
+  .fs-1 {
+    font-size: 2.10rem !important;
+  }
+  .fs-2 {
+    font-size: 1.95rem !important;
+  }
+  .fs-3 {
+    font-size: 1.85rem !important;
+  }
+  .fs-4 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';
