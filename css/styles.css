@@ -1,3 +1,7 @@
+h1 {
+  margin-right: auto !important;
+}
+
 .filter-container {
   width: 67% !important;
   margin-inline: auto;
@@ -24,6 +28,12 @@ li h4, li .expenseName, li .goalName {
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
+  header {
+    flex-direction: column !important;
+  }
+  header h1 {
+    margin-right: 0 !important;
+  }
   section {
     padding-inline: 1rem !important;
   }

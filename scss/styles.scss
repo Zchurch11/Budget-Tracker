@@ -1,3 +1,6 @@
+h1{
+    margin-right: auto !important;
+}
 .filter-container{
     width: 67% !important;
     margin-inline: auto;
@@ -25,6 +28,13 @@ li{
     height: 400px !important;
 }
 @media (min-width: 360px) and (max-width: 767px) {
+    header{
+        flex-direction: column !important;
+
+        h1{
+            margin-right: 0 !important;
+        }
+    }
     section{
         padding-inline: 1rem !important;
     }
@@ -57,7 +67,12 @@ li{
         margin: 0 !important;
     }
 }
+@media (min-width: 768px) and (max-width: 989px){
+    
+}
+
 @media (min-width: 990px) and (max-width: 1230px ){
+    
     .stats{
         .card{
             height: 90%;

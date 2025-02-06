@@ -24,6 +24,7 @@ renderIncome()
 displayIncome()
 renderExpenses()
 renderChart()
+renderSavingsGoals()
 console.log('clicked')
 }
 //Set income amount and display it in the income card 
@@ -141,6 +142,12 @@ function renderExpenses() {
           </button> </li>
         `;});
 
+  } else{
+    const expenseCollapse = document.getElementById('collapseExpenses')
+      const bsCollapse = new bootstrap.Collapse(expenseCollapse, {
+        toggle: false
+      });
+      bsCollapse.show();
   }   
   const largestExpenseEl = document.getElementById('largestExpense')
   largestExpenseEl.textContent = `${largestExpense.name ? largestExpense.name : ''} - ${largestExpense.cost ? '$' + largestExpense.cost : ''}
