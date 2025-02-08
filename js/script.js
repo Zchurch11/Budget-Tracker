@@ -2,14 +2,14 @@ const resetBtn = document.getElementById('reset')
 const incomeText = document.getElementById('income')
 const incomeInput = document.getElementById('incomeInput')
 const incomeForm = document.getElementById('incomeForm')
-// possibly make function scoped
+
 const expenseForm = document.getElementById('expenseForm')
 const expenseInput = document.getElementById('expenseName')
 const expenseAmount = document.getElementById('expenseAmount')
 const expenseEl = document.getElementById('expenseTotal')
 const expenseSelect = document.getElementById('expenseSelect')
 const expenseList = document.getElementById('expenseList')
-// Also possibly function scope these
+
 const savingsForm = document.getElementById('savingsForm')
 const savingsInput = document.getElementById('savingsName')
 const savingsAmount = document.getElementById('savingsAmount') 
