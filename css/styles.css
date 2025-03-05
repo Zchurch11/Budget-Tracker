@@ -11,7 +11,7 @@ h1 {
 }
 
 #expenses, #savingsList {
-  min-height: 155px !important;
+  height: max-content !important;
 }
 
 li h4, li .expenseName, li .goalName {
