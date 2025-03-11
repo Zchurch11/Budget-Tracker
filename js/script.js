@@ -124,6 +124,7 @@ function setExpenseToStorage(){
       const modal = new bootstrap.Modal(modalEl)
       incomeHint.classList.add('invalid')
       modal.show()
+      return
     }
     if (isValid){
       
