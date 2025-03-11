@@ -1,0 +1,101 @@
+h1 {
+  margin-right: auto !important;
+}
+
+.filter-container {
+  width: 67% !important;
+  margin-inline: auto;
+}
+.filter-container #filterExpenses {
+  width: 68% !important;
+}
+
+#expenses, #savingsList {
+  height: max-content !important;
+}
+
+li h4, li .expenseName, li .goalName {
+  flex: 1;
+}
+
+.card input, .card select {
+  border: 1px solid #dfdfdf;
+}
+
+.input-wrapper .flex-column:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.progress {
+  height: 30px !important;
+}
+
+#expenseContainer {
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+#expenseContainer.show {
+  max-height: 400px !important;
+}
+
+.expenseNameHint.invalid, .expenseAmountHint.invalid, .expenseSelectHint.invalid, .savingsSelectHint.invalid, .savingsNameHint.invalid, .savingsAmountHint.invalid, .savingsContributionsHint.invalid, .incomeHint.invalid {
+  width: fit-content;
+  display: block;
+  background-color: var(--bs-danger-bg-subtle);
+  color: var(--bs-danger-text-emphasis);
+}
+
+.expenseNameHint, .expenseAmountHint, .expenseSelectHint, .savingsNameHint, .savingsAmountHint, .savingsSelectHint, .savingsContributionsHint, .incomeHint {
+  display: none;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  header {
+    flex-direction: column !important;
+  }
+  header h1 {
+    margin-right: 0 !important;
+  }
+  section {
+    padding-inline: 1rem !important;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .filter-container {
+    width: 100% !important;
+  }
+  .filter-container #filterExpenses {
+    width: 100% !important;
+  }
+  .goal-stats h5 {
+    font-size: 1.1rem !important;
+  }
+  .input-wrapper {
+    flex-direction: column !important;
+  }
+  .input-wrapper input[type=number] {
+    margin-bottom: 1rem !important;
+  }
+  #savingsSelect {
+    margin: 0 !important;
+  }
+}
+@media (min-width: 990px) and (max-width: 1230px) {
+  .stats .card {
+    height: 90%;
+  }
+  .input-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .input-wrapper input[type=number] {
+    margin-bottom: 0 !important;
+  }
+}
